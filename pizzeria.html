@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Pizzeria´s Formulario </title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Folleto de una pizzeria con HTML, CSS y Javascript">
+        <meta name="keywords" content="Pizzas, Folleto, Formulario">
+        <meta name="author" content="@iAntonAMC">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="resources/stylesheets/pizzeria.css">
+        <link rel="stylesheet" href="resources/stylesheets/botones_scroll.css">
+        <link rel="icon" href="resources/favicons/icontrol.png">
+    </head>
+    <body style="background-color: #bba2ff">
+        <h1 style="text-align: center;"> Formulario Folleto de Pizzería </h1>
+        <hr>
+        <nav style="justify-content: space-around;">
+            <li><a href = "index.html"> Volver </li>
+        </nav>
+        <hr>
+        <section class="bodycontainer">
+            <div class="cabecera">
+                <div class="cuadropizza">
+                    <img src="resources/images/pizza.png" style="transform: rotateX(180deg); transform: rotateY(180deg);">
+                </div>
+                <div class="cuadrologo">
+                    <img src="resources/images/logorickmorty.png" height="90%" style="margin-bottom: 1px;">
+                </div>
+                <div class="cuadropizza">
+                    <img src="resources/images/pizza.png">
+                </div>
+            </div>
+            <div class="cuerpo">
+                <div class="ladoizquierdo">
+                    <div class="izquierdaarriba">
+                        <div class="contenedorpasos">
+                            <span class="paso1">
+                                <h3 style="text-align: center;"> Paso 1: Escoge el tamaño de tu pizza </h3>
+                                <hr size="3" color="black" width="95%" style="margin-top: -6px;">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td>
+                                            <p style="text-align: center;"><label><input type="radio" name="tamaño" value="chica"> Pequeña </label></p>
+                                        </td>
+                                        <td>
+                                            <p style="text-align: center;"><label><input type="radio" name="tamaño" value="mediana"> Grande </label></p>
+                                        </td>
+                                        <td>
+                                            <p style="text-align: center;"><label><input type="radio" name="tamaño" value="grande"> Gigante </label></p>
+                                        </td>
+                                        <td rowspan="3" style="width: 150px;">
+                                            <img src="resources/images/tamano_pizza.png" width="100%" height="100%"/>
+                                        </td>
+                                    </tr>
+                                    <tr style="text-align: center;">
+                                        <td>
+                                            6 Rebanadas
+                                        </td>
+                                        <td>
+                                            8 Rebanadas
+                                        </td>
+                                        <td>
+                                            12 Rebanadas
+                                        </td>
+                                    </tr>
+                                    <tr style="text-align: center; color:white;">
+                                        <td>
+                                            $135
+                                        </td>
+                                        <td>
+                                            $165
+                                        </td>
+                                        <td>
+                                            $185
+                                        </td>
+                                    </tr>
+                                </table>
+                            </span>
+                            <span class="paso2">
+                                <h3 style="text-align: center;"> Paso 2: Escoge el queso extra para tu pizza </h3>
+                                <hr size="3" color="black" width="95%" style="margin-top: -6px;">
+                                <table>
+                                    <tr  style="text-align: center;">
+                                        <td rowspan="4" style="border: 3px inset;">
+                                        </td>
+                                        <td rowspan="4">
+                                        </td>
+                                        <td>
+                                            - Nuestra masa más tradicional
+                                        </td>
+                                    </tr>
+                                    <tr style="text-align: center;">
+                                        <td>
+                                            - Masa lijera y crujiente
+                                        </td>
+                                    </tr>
+                                    <tr  style="text-align: center;">
+                                        <td>
+                                            - Esponjosa y Suavecita
+                                        </td>
+                                    </tr>
+                                    <tr  style="text-align: center;">
+                                        <td>
+                                            - Orilla rellena de Queso Mozzarela ($30)
+                                        </td>
+                                    </tr>
+                                </table>
+                            </span>
+                            <span class="paso3">
+                                <h3 style="text-align: center;"> Paso 3: Escoge el queso extra </h3>
+                                <hr size="3" color="black" width="95%" style="margin-top: -6px;">
+                                <table>
+                                    <tr  style="text-align: center;">
+                                        <td rowspan="2" style="border: 3px inset;">
+                                        </td>
+                                        <td style="font-weight: bold;">
+                                            Cantidad
+                                        </td>
+                                        <td>
+                                            Poca (5gr)
+                                        </td>
+                                        <td>
+                                            Mediana (12gr)
+                                        </td>
+                                        <td>
+                                            Extra (20gr)
+                                        </td>
+                                    </tr>
+                                    <tr style="text-align: center;">
+                                        <td style="font-weight: bold;">
+                                            Costo Xtra
+                                        </td>
+                                        <td style="font-weight: 700;">
+                                            $ 12
+                                        </td>
+                                        <td style="font-weight: 700;">
+                                            $ 18
+                                        </td>
+                                        <td style="font-weight: 700;">
+                                            $ 25
+                                        </td>
+                                    </tr>
+                                </table>
+                            </span>
+                        </div>
+                        <div class="paso4">
+                            <h3 style="text-align: center; width: 100%;"> Paso 4: Escoge los Xtras </h3>
+                            <hr size="3" color="black" width="95%" style="margin-top: -6px;">
+                            <span class="ingredientesextra">
+                                <p><label><input type="checkbox" name="ingrediente" value="ingrediente1"> Pepperoni </label></p>
+                                <p><label><input type="checkbox" name="ingrediente" value="ingrediente2"> Salchicha </label></p>
+                                <p><label><input type="checkbox" name="ingrediente" value="ingrediente3"> Jamón </label></p>
+                                <p><label><input type="checkbox" name="ingrediente" value="ingrediente4"> Pierna </label></p>
+                                <p><label><input type="checkbox" name="ingrediente" value="ingrediente5"> Chorizo </label></p>
+                                <p><label><input type="checkbox" name="ingrediente" value="ingrediente6"> Pavo </label></p>
+                                <p><label><input type="checkbox" name="ingrediente" value="ingrediente7"> Carne </label></p>
+                                <p><label><input type="checkbox" name="ingrediente" value="ingrediente8"> Tocino </label></p>
+                                <p><label><input type="checkbox" name="ingrediente" value="ingrediente9"> Pimiento </label></p>
+                                <p><label><input type="checkbox" name="ingrediente" value="ingrediente10"> Cebolla </label></p>
+                                <p><label><input type="checkbox" name="ingrediente" value="ingrediente11"> Piña </label></p>
+                            </span>
+                        </div>
+                    </div>
+                    <footer class="espingredientes">
+                        <h3 style="text-align: center;"> Especialidades: Escoge una especialidad para tu pizza </h3>
+                        <table style="border: 3px; width: 95%; margin: auto;">
+                            <tr  style="text-align: center;">
+                                <td rowspan="2">
+                                    <Select name="ingredientes" id="ingrediente" style="border: 3px inset;">
+                                        <option value="0"> Ninguna </option>
+                                        <option value="pepperoni"> Pepperoni </option>
+                                        <option value="chiles"> Jalapeños </option>
+                                        <option value="hongo"> Champiñones </option>
+                                    </Select>
+                                </td>
+                                <td rowspan="2">
+                                    <textarea rows="3" cols="50" style="width: 90%; margin: auto; border: 2px inset #5213ff; border-radius: 6px;"> Ingredientes deseados </textarea> 
+                                </td>
+                                <td>
+                                    Chica
+                                </td>
+                                <td>
+                                    Mediana
+                                </td>
+                                <td>
+                                    Grande
+                                </td>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td>
+                                    $160
+                                </td>
+                                <td>
+                                    $190
+                                </td>
+                                <td>
+                                    $220
+                                </td>
+                            </tr>
+                        </table>
+                    </footer>
+                </div>
+                <div class="largoderecho">
+                    <h3 style="text-align: center;"> Confirma tu pedido </h3>
+                    <hr size="3" color="black" width="95%">
+                    <table tyle="row-gap: 6px;"> 
+                        <tr  style="text-align: center;">
+                            <td colspan="2">
+                                <img src="resources/images/pizzasvarias.jpg" width="100%" height="100%">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Pizza
+                            </td>
+                            <td>
+                                <input type="text" name="pizza" style="width: 90%;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Tamaño
+                            </td>
+                            <td>
+                                <input type="text" name="tamano" style="width: 90%;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Masa
+                            </td>
+                            <td>
+                                <input type="text" name="masa" style="width: 90%;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Queso
+                            </td>
+                            <td>
+                                <input type="text" name="queso" style="width: 90%;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 700; text-align: center;" colspan="2">
+                                Ingredientes:
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <textarea rows="4" cols="10" style="width: 95%; margin: auto; border: 2px inset #5213ff; border-radius: 6px;"> Ingredientes deseados </textarea> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Precio
+                            </td>
+                            <td>
+                                <input type="text" name="queso" style="width: 90%;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center; font-weight: 700; background: #ce3737;">
+                                Boton guardar
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center; font-weight: 700; background: #ce3737;">
+                                Boton Borrar
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <img src="resources/images/pizzagif.gif" width="100%" height="100%">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </body>
+    <footer style="text-align: center;"><h6>By: @iAntonAMC</h6></footer>
+</html>

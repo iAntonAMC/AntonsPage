@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Formulario </title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Formularios, Registros">
+        <meta name="author" content="@iAntonAMC">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="resources/stylesheets/formulario.css">
+        <link rel="stylesheet" href="resources/stylesheets/botones_scroll.css">
+        <link rel="icon" href="resources/icontrol.png">
+    </head>
+    <body style="background-color: #bba2ff">
+        <center>
+            <h1> Formulario </h1>
+        </center>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="index.html"> Volver </a></li>
+            </ul>
+        </nav>
+        <hr>
+        <section style="margin-top: 25px;" class="mainsection">
+            <form name="formulario" method="get" class="names">
+                <fieldset style="background-color: #f2eefde8;">
+                <legend><b> Rellenar: </b></legend>
+                <div class="idiomas">
+                    <p><label><input type="radio" name="idioma" value="idiomaingles"> Inglés </label></p>
+                    <p><label><input type="radio" name="idioma" value="idiomafrances"> Francés </label></p>
+                    <p><label><input type="radio" name="idioma" value="idiomaaleman"> Alemán </label></p>
+                </div>
+                <textarea rows="8" cols="53" style="border: 2px solid #5213ff; border-radius: 6px;" text="Introduzca aquí su texto"></textarea>
+                <p> Indique una fecha: <input type="date" name="date"></p>
+                <p> Indique una hora: <input type="time" name="time"></p>
+                Seleccione su tipo de Red: 
+                <Select name="conection" id="conection">
+                    <option value="wifi"> WiFi </option>
+                    <option value="cable"> Cable </option>
+                    <option value="Fibra"> Fibra </option>
+                </Select>
+                <p> Inserte un archivo: <input type="file" name="file"></p>
+                <p> Seleccione un color: <input type="color" name="color"></p>
+                <p>Vuelva a indicar su tipo de Red: </p>
+                <p><label><input type="checkbox" name="conexion" value="conexionwifi"> WiFi </label></p>
+                <p><label><input type="checkbox" name="conexion" value="conexioncable"> Cable </label></p>
+                <p><label><input type="checkbox" name="conexion" value="conexionfibra"> Fibra </label></p>
+                <p> Instituto: <input type="text" name="institute" style="width: 30%;"></p>
+                <p> Estudios: <input type="text" name="studies" style="width: 30%;"></p>
+                <div class="nombre">
+                    <p> Nombre: <input type="text" name="name"></p>
+                    <p style="margin-left: 10px;"> Apellidos: <input type="text" name="secondname"></p>
+                </div>
+                <p>Email: <input type="text" name="email" style="margin-left: 12px;"></p>
+                <div class="botones" style="margin-left: 100px;">
+                    <button type="submit" style="border: 2px solid #5213ff; margin-top: 10px;"> Enviar </button>
+                    <button type="reset" style="border: 2px solid #5213ff; margin-top: 10px;"> Reiniciar </button>
+                </div>
+                </fieldset>
+            </form>
+            <form name="formulario" method="get" class="names">
+                <fieldset  style="background-color: #f2eefde8;">
+                <legend><b> Complete lo Siguiente: </b></legend>
+                <textarea rows="5" cols="47" style="margin-top: 10px; border: 2px solid #5213ff; border-radius: 6px;"> Use este espacio para sus comentarios, por favor. </textarea> 
+                <div class="nombre">
+                    <p> Nombre: <input type="text" name="name"></p>
+                    <p style="margin-left: 10px;"> Apellidos: <input type="text" name="secondname"></p>
+                    <p style="margin-left: 10px;"> Teléfono: <input type="text" name="secondname"></p>
+                </div>
+                Seleccione su lenguaje preferido: 
+                <Select name="lenguaje">
+                    <option value="java"> Java </option>
+                    <option value="python"> Python </option>
+                    <option value="html"> HTML </option>
+                    <option value="visual_basic"> Visual Basic </option>
+                </Select>
+                <p> Inserte otro archivo: <input type="file" name="file"></p>
+                <div class="nombre">
+                    <p><label><input type="radio" name="asignatura" value="asignaturalengua"> Lengua </label></p>
+                    <p><label><input type="radio" name="asignatura" value="asignaturamatematicas"> Matemáticas </label></p>
+                    <p><label><input type="radio" name="asignatura" value="asignaturahistoria"> Historia </label></p>
+                    <p><label><input type="radio" name="asignatura" value="asignaturageografia"> Geografía </label></p>
+                </div>
+                <p> Indique otra hora: <input type="time" name="time"></p>
+                <p> Indique una fecha: <input type="date" name="date"></p>
+                <div class="idiomas">
+                    <p><input type="checkbox" name="ciclo" value="ciclosmir"> SMIR </p>
+                    <p><input type="checkbox" name="ciclo" value="cicloasir"> ASIR </p>
+                    <p><input type="checkbox" name="ciclo" value="ciclodam"> DAM </p>
+                    <p><input type="checkbox" name="ciclo" value="ciclodaW"> DAW </p>
+                </div>
+                <div class="botones" style="margin-left: 100px;">
+                    <button type="submit" style="border: 2px solid #5213ff; margin-top: 10px;"> Enviar </button>
+                    <button type="reset" style="border: 2px solid #5213ff; margin-top: 10px;"> Reiniciar </button>
+                </div>
+                </fieldset>
+            </form>
+        </section>
+    </body>
+</html>
